@@ -1,3 +1,15 @@
+#Athiksha Venkannagari - G01461169
+#Arsitha Sathu - G01445215
+#Ramyasahithya Magani - G01425752
+#Prasad Reddy Mandha - G01454689
+#SaichinmayeeYanamadala - G01459318
+#LikhithNattuva - G0144733
+#Priya Dharshini Allapuram - G01457911
+#Sreshta Kosaraju - G01460468
+
+# Kubernetes deployment.yaml file defines a replica set of  one instance for student survey vue application,
+# using the specified Docker image and exposing port 80.
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
