@@ -247,7 +247,8 @@ export default {
           
         })
         .catch((error) => {
-          console.error('Error submitting form:', error)
+          console.error('Error submitting form:', error);
+          alert('Error submitting form:', error);
         });
       
     },

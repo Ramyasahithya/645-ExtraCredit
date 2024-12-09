@@ -296,10 +296,11 @@ export default{
               SurveyFormService.deleteSurveyFormData(id).then((response)=>{
               console.log(response.data)
               console.log('form data deleted successfully');
-              alert('Survey data has been submitted successfully');
+              alert('Survey data has been deleted successfully');
               this.getSurveyFormData()
               }).catch((error) => {
-              console.error('Error deleting the survey form:', error)
+              console.error('Error deleting the survey form:', error);
+              alert("There is an error while deleting the survey form")
             });
           }
         },
@@ -343,6 +344,7 @@ export default{
               this.getSurveyFormData();
               }).catch((error) => {
               console.error('Error updating the survey form:', error)
+              alert(error.message);
             });
 
         }
