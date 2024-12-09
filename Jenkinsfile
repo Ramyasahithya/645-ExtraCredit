@@ -9,7 +9,7 @@ pipeline {
     agent any
     environment {
         IMAGE_TAG = "${env.BUILD_ID}"
-        NPM_BUILD="build"
+        NPM_BUILD="run build"
     }
 
     stages {
