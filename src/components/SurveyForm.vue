@@ -1,3 +1,23 @@
+<!--
+Athiksha Venkannagari - G01461169
+Arsitha Sathu - G01445215
+Ramyasahithya Magani - G01425752
+Prasad Reddy Mandha - G01454689
+SaichinmayeeYanamadala - G01459318
+LikhithNattuva - G0144733
+Priya Dharshini Allapuram - G01457911
+Sreshta Kosaraju - G01460468
+-->
+<!--
+The student survey form has a variety of input fields, including text fields, checkboxes, radio buttons, and dropdown menus. 
+Some fields are marked as needed to ensure that necessary information is delivered.
+The form also has Submit and Cancel buttons at the bottom for form activities. 
+Two-way data binding is used to capture user input and then send the survey form data it to a Spring Boot application for processing.
+It also contains the corresponding css for the form and javascript code that basically 
+makes a request to the Spring Boot application using the service defined
+
+-->
+
 <template>
   <div class="form-container">
     <form @submit.prevent="saveSurveyData">

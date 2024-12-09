@@ -1,3 +1,25 @@
+<!--
+Athiksha Venkannagari - G01461169
+Arsitha Sathu - G01445215
+Ramyasahithya Magani - G01425752
+Prasad Reddy Mandha - G01454689
+SaichinmayeeYanamadala - G01459318
+LikhithNattuva - G0144733
+Priya Dharshini Allapuram - G01457911
+Sreshta Kosaraju - G01460468
+-->
+<!--
+The Student Survey List displays a scrollable table of all submitted survey forms from the database. 
+The table includes Update and Delete buttons for each entry.
+Clicking the Update button opens a modal dialog showing the selected survey data, with two-way binding used to track changes. 
+The modal contains Update and Close buttons; clicking Update sends a PUT request to the Spring Boot application, 
+and the changes are reflected after refreshing the page. 
+Clicking the Delete button prompts the user to confirm the deletion. Upon confirmation, 
+a DELETE request is sent to the Spring Boot application, and the table updates after the page is refreshed
+It also contains the corresponding css for the form and javascript code that basically 
+makes a request to the Spring Boot application using the service defined
+-->
+
 <template>
   <div class="container">
     <h2 class="text-center">Survey List</h2>

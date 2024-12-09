@@ -1,7 +1,21 @@
+<!--
+Athiksha Venkannagari - G01461169
+Arsitha Sathu - G01445215
+Ramyasahithya Magani - G01425752
+Prasad Reddy Mandha - G01454689
+SaichinmayeeYanamadala - G01459318
+LikhithNattuva - G0144733
+Priya Dharshini Allapuram - G01457911
+Sreshta Kosaraju - G01460468
+-->
+<!--
+The file defines the navigation and footer that is displayed which is the homepage layout
+It also contains the corresponding css.
+-->
+
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 </script>
-
 <template>
   <div class="app-container">
     <nav class="app-nav">
