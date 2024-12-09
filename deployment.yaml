@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: surveyform-vue-deployment
+  labels:
+    app: surveyform-vue
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: surveyform-vue
+  template:
+    metadata:
+      labels:
+        app: surveyform-vue
+    spec:
+      containers:
+        - name: vue-app
+          image: ramya0602/vue_surveyform:${IMAGE_TAG}
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: dockerkey
