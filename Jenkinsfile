@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'master', url: 'https://github.com/Ramyasahithya/645-ExtraCredit'
+                git branch: 'main', url: 'https://github.com/Ramyasahithya/645-ExtraCredit'
             }
         }
         stage('Install Dependencies') {
