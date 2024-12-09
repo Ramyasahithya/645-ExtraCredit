@@ -15,7 +15,7 @@ spec:
         app: surveyform-vue
     spec:
       containers:
-        - name: vue-app
+        - name: surveyform-vue
           image: ramya0602/vue_surveyform:${IMAGE_TAG}
           ports:
             - containerPort: 80
