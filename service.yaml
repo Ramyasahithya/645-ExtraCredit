@@ -1,22 +1,13 @@
-# service.yaml file has surveydata-service that exposes the application with a NodePort type,
-# allowing external access to the application on ports 8080(HTTP) and 443(HTTPS).
-# It routes traffic to pods labeled with app:surveydata, targeting port 8080 within those pods.
-
 apiVersion: v1
 kind: Service
 metadata:
   name: surveyform-vue-service
-  labels:
-    run: surveyform-vue
 spec:
   selector:
     app: surveyform-vue
   type: NodePort
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 80
       protocol: TCP
-      name: http
-    - port: 443
-      protocol: TCP
-      name: https
+      nodePort: 30080
